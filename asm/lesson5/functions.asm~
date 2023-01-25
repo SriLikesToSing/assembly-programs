@@ -20,7 +20,7 @@ finished:
 ;print string 
 
 sprint:
-	push edx
+	;push edx
 	push ecx
 	push ebx
 	push eax
@@ -36,7 +36,7 @@ sprint:
 
 	pop ebx
 	pop ecx
-	pop edx
+	;pop edx
 	ret
 
 
@@ -46,6 +46,7 @@ quit:
 	mov ebx, 0
 	mov eax, 1
 	int 80h
+	ret
 
 
 
