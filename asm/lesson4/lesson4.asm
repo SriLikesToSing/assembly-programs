@@ -29,10 +29,12 @@ _start:
 	move eax, 4
 	int 80h
 
+	; returns before continuing again to strlen: 
 	move ebx, 0
 	mov eax, 1
 	int 80h
 
+;one continugous execution once it's called
 strlen:
 	push ebx
 	mov ebx, eax
