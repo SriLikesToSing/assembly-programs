@@ -27,7 +27,6 @@ nextchar:
 finished:
 	sub eax, ebx ;ebx now contains the number of characters in string
 
-
 	mov edx, eax
 	mov ecx, msg
 	mov ebx, 1
